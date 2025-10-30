@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Login Experience - BRANDLY</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Animated Particles Background -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container" id="container">
+        
+        <!-- Logo Brand -->
+        <div class="logo-container">
+            <i class="fas fa-rocket"></i>
+            <span class="logo-text"></span>
+        </div>
+
+        <!-- Sign Up Form Container -->
+        <div class="form-container sign-up-container">
+            <form class="form" id="signUpForm">
+                <h1>Create Account</h1>
+                <p class="subtitle">Join us for an amazing experience</p>
+                
+                <div class="social-container">
+                    <a href="#" class="social-btn google" title="Sign up with Google">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-btn facebook" title="Sign up with Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-btn github" title="Sign up with GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-btn linkedin" title="Sign up with LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                
+                <span class="divider">or use your email for registration</span>
+                
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Full Name" required />
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email Address" required />
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required />
+                    <i class="fas fa-eye toggle-password"></i>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <span>SIGN UP</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+
+        <!-- Sign In Form Container -->
+        <div class="form-container sign-in-container">
+            <form class="form" id="signInForm">
+                <h1>Welcome Back</h1>
+                <p class="subtitle">Sign in to continue your journey</p>
+                
+                <div class="social-container">
+                    <a href="#" class="social-btn google" title="Sign in with Google">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-btn facebook" title="Sign in with Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-btn github" title="Sign in with GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-btn linkedin" title="Sign in with LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                
+                <span class="divider">or use your email account</span>
+                
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email Address" required />
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required />
+                    <i class="fas fa-eye toggle-password"></i>
+                </div>
+                
+                <a href="#" class="forgot-password">
+                    <i class="fas fa-question-circle"></i> Forgot your password?
+                </a>
+                
+                <button type="submit" class="submit-btn">
+                    <span>SIGN IN</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+
+        <!-- Overlay Panel -->
+        <div class="overlay-container">
+            <div class="overlay">
+                
+                <!-- Overlay Left (Welcome Back) -->
+                <div class="overlay-panel overlay-left" id="overlayLeft">
+                    <div class="overlay-content">
+                        <i class="fas fa-user-circle overlay-icon"></i>
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal information</p>
+                        <button class="ghost-btn" id="signIn">
+                            <span>SIGN IN</span>
+                            <i class="fas fa-sign-in-alt"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Decorative Elements -->
+                    <div class="overlay-decoration">
+                        <div class="deco-circle circle-1"></div>
+                        <div class="deco-circle circle-2"></div>
+                        <div class="deco-circle circle-3"></div>
+                    </div>
+                </div>
+                
+                <!-- Overlay Right (Hello Friend) -->
+                <div class="overlay-panel overlay-right" id="overlayRight">
+                    <div class="overlay-content">
+                        <i class="fas fa-rocket overlay-icon"></i>
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start your journey with us</p>
+                        <button class="ghost-btn" id="signUp">
+                            <span>SIGN UP</span>
+                            <i class="fas fa-user-plus"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Decorative Elements -->
+                    <div class="overlay-decoration">
+                        <div class="deco-circle circle-1"></div>
+                        <div class="deco-circle circle-2"></div>
+                        <div class="deco-circle circle-3"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="home.js"></script>
+</body>
+</html>
